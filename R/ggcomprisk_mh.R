@@ -1,5 +1,11 @@
-#Competing risks modified function (from survminer)
-# Making color be group instead of event
+#'Competing risks modified function (from survminer)
+#'
+#' Make color be group instead of event
+#'
+#' @param fit cuminc model
+#' @export
+#' @author Margaret L. Hannum
+#
 ggcomprisk_mh <-
   function (fit, gnames = NULL, gsep = " ", multiple_panels = TRUE)
   {

@@ -1,15 +1,21 @@
 Package: funnum
-Title: What the Package Does (One Line, Title Case)
+Title: Helper functions to get projects done
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Margaret",
+           family = "Hannum",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+           email = "hannumm@mskcc.org")
+Description: funnum is a collection of functions from other packages, customized for my purposes. 
 License: What license it uses
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/margarethannum/funnum
 BugReports: https://github.com/margarethannum/funnum/issues
+RoxygenNote: 6.1.1
+Imports: 
+    survminer,
+    survival,
+    cmprsk,
+    ggplot2,
+    gridExtra
