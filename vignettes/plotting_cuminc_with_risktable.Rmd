@@ -1,0 +1,21 @@
+---
+title: "Plotting Cumulative Incidence Curve with Risk Table"
+author: "Margie Hannum"
+date: "2019-07-26"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{plotting_cuminc_with_risktable}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(funnum)
+```
