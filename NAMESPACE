@@ -3,4 +3,5 @@
 export("%>%")
 export(ggcomprisk_mh)
 export(plot_cuminc_w_risktab)
+export(xtab_rowcol)
 importFrom(magrittr,"%>%")
