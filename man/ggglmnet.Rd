@@ -14,11 +14,23 @@ ggglmnet(fit, beta, intercept)
 \item{intercept}{string indicating name of intercept in model results}
 }
 \description{
-Labels
+Input a glmnet object and output a formatted ggplot result of the coefficients.
 }
 \examples{
 
+ \dontrun{
+ ## Gaussian
+ x = matrix(rnorm(100 * 20), 100, 20)
+ y = rnorm(100)
+ fit1 = glmnet(x, y)
+ ggglmnet(fit1, coef(fit1), intercept = "(Intercept)")
 
+ ## multinomial
+ g4 = sample(1:4, 100, replace = TRUE)
+ fit3 = glmnet(x, g4, family = "multinomial")
+ # plot coefficients for first level of multinomial endpoint
+ ggglmnet(fit3, coef(fit3)$`1`, intercept = "")
+ }
 }
 \seealso{
 \code{\link[survminer]{ggcompetingrisks}}

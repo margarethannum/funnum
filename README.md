@@ -16,5 +16,5 @@ You can install the development version from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("margarethannum/funnum")
+devtools::install_github("margarethannum/funnum", ref = "development")
 ```
