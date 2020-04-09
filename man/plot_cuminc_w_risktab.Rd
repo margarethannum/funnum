@@ -4,9 +4,20 @@
 \alias{plot_cuminc_w_risktab}
 \title{Plot Cumulative Incidence with Survminer Risk Table}
 \usage{
-plot_cuminc_w_risktab(title, note, variable, survtime, survstatus_gray,
-  survstatus_reg, dat, legend_labs = levels(as.factor(dat[[variable]])),
-  xlim, ylim, break.time.by, breaks)
+plot_cuminc_w_risktab(
+  title,
+  note,
+  variable,
+  survtime,
+  survstatus_gray,
+  survstatus_reg,
+  dat,
+  legend_labs = levels(as.factor(dat[[variable]])),
+  xlim,
+  ylim,
+  break.time.by,
+  breaks
+)
 }
 \arguments{
 \item{title}{character title}
@@ -36,6 +47,9 @@ plot_cuminc_w_risktab(title, note, variable, survtime, survstatus_gray,
 \description{
 Pastes together a modified version of ggcompetingrisks with a
 custom ggrisktable
+}
+\examples{
+ADD EXAMPLE
 }
 \seealso{
 \code{\link[survminer]{ggcompetingrisks}}, \code{\link[survminer]{ggrisktable}}, \code{\link[cmprsk]{cuminc}}

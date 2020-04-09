@@ -16,6 +16,11 @@ xtab_rowcol(x, rowvar, colvar)
 \description{
 Useful in comparing cluster assignments
 }
+\examples{
+
+x <- cbind( x1 = c(1, 0, 0, 4), x2 = c(0, 1, 5, 0), x3 = c(6, 3, 0, 0))
+xtab_rowcol(x, "a", "b")
+}
 \author{
 Margaret L. Hannum
 }

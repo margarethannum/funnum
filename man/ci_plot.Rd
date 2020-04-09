@@ -4,8 +4,20 @@
 \alias{ci_plot}
 \title{Custom Cumulative incidence plot with risk table}
 \usage{
-ci_plot(dat, time, status, variable, title, note, pallette, legend_labs,
-  xlim, ylim, break.time.by, breaks = NULL)
+ci_plot(
+  dat,
+  time,
+  status,
+  variable,
+  title,
+  note,
+  pallette,
+  legend_labs,
+  xlim,
+  ylim,
+  break.time.by,
+  breaks = NULL
+)
 }
 \arguments{
 \item{dat}{data frame}

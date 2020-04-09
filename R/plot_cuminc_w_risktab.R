@@ -20,8 +20,7 @@
 #' @seealso \code{\link[survminer]{ggcompetingrisks}}, \code{\link[survminer]{ggrisktable}}, \code{\link[cmprsk]{cuminc}}
 #' @author Margaret L. Hannum
 #' @examples
-# ADD EXAMPLE
-#
+#' ADD EXAMPLE
 
 plot_cuminc_w_risktab <- function(title, note,
                                     # pallette,
