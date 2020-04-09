@@ -5,7 +5,7 @@
 #' @param fit cuminc model
 #' @export
 #' @author Margaret L. Hannum
-#
+
 ggcomprisk_mh <-
   function (fit, gnames = NULL, gsep = " ", multiple_panels = TRUE)
   {

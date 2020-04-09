@@ -4,9 +4,10 @@
 \name{funnum-package}
 \alias{funnum}
 \alias{funnum-package}
-\title{funnum: Helper functions to get projects done}
+\title{@keywords internal}
 \description{
-funnum is a collection of functions from other packages, customized for my purposes.
+funnum is a collection of functions from other
+    packages, customized for my purposes.
 }
 \seealso{
 Useful links:
@@ -20,4 +21,3 @@ Useful links:
 \strong{Maintainer}: Margaret Hannum \email{hannumm@mskcc.org}
 
 }
-\keyword{internal}
