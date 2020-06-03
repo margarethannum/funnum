@@ -7,7 +7,7 @@
 #' @author Margaret L. Hannum
 
 ggcomprisk_mh <-
-  function (fit, gnames = NULL, gsep = " ", multiple_panels = TRUE)
+  function (fit, gnames = NULL, gsep = " ", multiple_panels = TRUE, stratified = TRUE)
   {
     if (!is.null(fit$Tests))
       fit <- fit[names(fit) != "Tests"]
@@ -26,11 +26,21 @@ ggcomprisk_mh <-
     df$group <- sapply(strsplit(df$name, split = gsep), `[`,
                        1)
     pl <- ggplot(df, aes(time, est, color = group))
+    if (stratified) {
     if (multiple_panels) {
       pl <- ggplot(df, aes(time, est, color = group)) + facet_wrap(~event)
     }
     else {
       pl <- ggplot(df, aes(time, est, color = group, linetype = event))
+    }
+    }
+    else {
+      if (multiple_panels) {
+        pl <- ggplot(df, aes(time, est, color = event)) + facet_wrap(~event)
+      }
+      else {
+        pl <- ggplot(df, aes(time, est, color = event, linetype = event))
+      }
     }
     pl + geom_line(size = 1.5)
   }
