@@ -3,6 +3,8 @@
 #' Make color be group instead of event
 #'
 #' @param fit cuminc model
+#' @param multiple_panels logical input (default = TRUE), whether to split stratification into two panels
+#' @param stratified logical input (default = TRUE), whether input model is stratified or not
 #' @export
 #' @author Margaret L. Hannum
 

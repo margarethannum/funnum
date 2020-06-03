@@ -10,6 +10,7 @@ ci_plot(
   status,
   variable,
   title,
+  xlab,
   note,
   pallette,
   legend_labs,
@@ -29,6 +30,8 @@ ci_plot(
 \item{variable}{variable, in quotes, of interest to compare}
 
 \item{title}{title of graph}
+
+\item{xlab}{x-axis label}
 
 \item{legend_labs}{vector}
 

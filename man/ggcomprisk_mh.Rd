@@ -4,10 +4,20 @@
 \alias{ggcomprisk_mh}
 \title{Competing risks modified function (from survminer)}
 \usage{
-ggcomprisk_mh(fit, gnames = NULL, gsep = " ", multiple_panels = TRUE)
+ggcomprisk_mh(
+  fit,
+  gnames = NULL,
+  gsep = " ",
+  multiple_panels = TRUE,
+  stratified = TRUE
+)
 }
 \arguments{
 \item{fit}{cuminc model}
+
+\item{multiple_panels}{logical input (default = TRUE), whether to split stratification into two panels}
+
+\item{stratified}{logical input (default = TRUE), whether input model is stratified or not}
 }
 \description{
 Make color be group instead of event

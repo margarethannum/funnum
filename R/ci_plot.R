@@ -8,6 +8,7 @@
 #' @param status variable, in quotes, with crr survival status
 #' @param variable variable, in quotes, of interest to compare
 #' @param title title of graph
+#' @param xlab x-axis label
 #' @param palette color palette
 #' @param legend_labs vector
 #' @param xlim vector
@@ -18,7 +19,7 @@
 #' # example add
 
 ci_plot <- function(dat, time, status, variable,
-                    title, note, pallette,
+                    title, xlab, note, pallette,
                     legend_labs, xlim, ylim, break.time.by, breaks = NULL) {
   cuminc_mod <- cmprsk::cuminc(ftime = dat[[time]],
                        fstatus = dat[[status]],
@@ -28,7 +29,7 @@ ci_plot <- function(dat, time, status, variable,
   crr_plot <- ggcomprisk_mh(cuminc_mod,
                                       multiple_panels = F) +
     labs(title = title,
-         x = "Time from Date of Start RT (Month)",
+         x = xlab,
          y = "Cumulative Incidence") +
     scale_linetype_manual(labels = c("1", "2"), values = c("solid", "blank"), guide = "none") +
     theme_survminer()  +
